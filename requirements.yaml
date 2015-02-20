@@ -1,0 +1,7 @@
+# A list of URLs and sources for downloading
+
+---
+urls:
+    # CEDET:
+    - http://sourceforge.net/projects/cedet/files/cedet/cedet-1.0.tar.gz/
+- "apt-get":

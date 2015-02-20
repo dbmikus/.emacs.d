@@ -1,0 +1,8 @@
+Allow a flag to be passed in so that we load a minimal version of my
+configuration. Alternatively, have a different init file that loads minimal
+configuration.
+
+Set up a list of package requirements to install if we don't have them.
+On top of this, I should figure out how to specify a package somewhere.
+See this: http://stackoverflow.com/questions/13866848/how-to-save-a-list-of-all-the-installed-packages-in-emacs-24
+And this: http://stackoverflow.com/questions/10092322/how-to-automatically-install-emacs-packages-by-specifying-a-list-of-package-name

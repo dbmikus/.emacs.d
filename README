@@ -1,0 +1,37 @@
+Author: Dylan Bergeron Mikus
+Created: 2011-11-28
+Last Updated: 2011-11-28
+------------------------------
+
+This is my emacs configuration folder. I don't use a .emacs file,
+but instead use the init.el file in this folder.
+
+Following is a brief description of the parts of this directory:
+
+init.el:
+    Does minor top-level setup and then loads a number of other files
+    to outsource the customization
+
+elisp:
+    Contains my written emacs configuration files. These are NOT files
+    and directories that other people have made.
+
+others-elisp:
+    Contains all code written by other people. As of now, not all external
+    code has been moved here. I need to move everything here and change
+    filepath references
+
+notes:
+    Contains notes and not emacs code. This is stuff mostly for my development
+    notes and general design
+
+elpa:
+    "Emacs Lisp Package Archive" manages emacs packages for easy install and
+    upgrades.
+
+requirements.yaml:
+    A list of resources and requirements to download from
+
+
+All other directories should probably be sorted into there proper places. Most
+likely, the place for these other directories will be "others-elisp".

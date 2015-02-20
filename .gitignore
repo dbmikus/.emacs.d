@@ -1,0 +1,17 @@
+*~
+\#*
+*\#
+*.elc
+*.zip
+*.tar.gz
+*.tar
+
+# Ignore package metadata stuff.
+# Ideally, we only store the list of installed packages, not the actual
+# installed contents.
+elpa/*
+
+
+# specific files
+ac-comphist.dat
+ido.last
