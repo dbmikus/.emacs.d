@@ -8,3 +8,9 @@ See this: http://stackoverflow.com/questions/13866848/how-to-save-a-list-of-all-
 And this: http://stackoverflow.com/questions/10092322/how-to-automatically-install-emacs-packages-by-specifying-a-list-of-package-name
 
 Use lexical scoping wherever possible
+
+Rename "elisp" to "lisp"
+
+Rename "others-elisp" to "site-lisp"
+
+Add an "etc" directory for configuration files.

@@ -19,7 +19,7 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 ;; Setting up redo
-    ; Actually set up redo
+    ; TODO Actually set up redo
 
 ;; Use hippie-expand
 (global-set-key (kbd "M-/") 'hippie-expand)
@@ -29,6 +29,15 @@
 
 ;; Highlight connecting braces
 (show-paren-mode 1)
+
+;;;; Bell functionality ;;;;
+;; When the bell is triggered, emacs runs the ring-bell-function.
+;; Turn off all bell functionality (visible, audible, custom):
+(setq ring-bell-function 'ignore)
+;; Bell makes an audible ding:
+;; (setq visible-bell nil)
+;; Bell flashes the screen:
+;; (setq visible-bell t)
 
 ;; Show line numbers
 (line-number-mode nil)
