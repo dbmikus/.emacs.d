@@ -5,11 +5,6 @@
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Doing stuff with colors
-(add-to-list 'load-path (concat init-pwd "color-theme-6.6.0"))
-(require 'color-theme)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; ;; Haskell mode stuff
 (load (concat init-pwd "others-elisp/haskell-mode/haskell-site-file"))
 (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
@@ -83,3 +78,10 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; XLE mode
 (load-library "lfg-mode")
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Better solarized color themes
+;; (add-to-list 'load-path (concat init-pwd
+;;                                 "others-elisp/"
+;;                                 "emacs-color-theme-solarized-master/"))

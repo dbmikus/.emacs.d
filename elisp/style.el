@@ -13,9 +13,16 @@
 ; Cool themes
 ; clarity
 ; euphoria
-(color-theme-solarized-dark)
+(require 'color-theme)
+(require 'color-theme-solarized)
+(color-theme-initialize)
+(color-theme-solarized)
+;; set dark theme
+;; (color-theme-solarized-dark)
+;; set light theme
+;; (color-theme-solarized-light)
 
-(set-default-font "Inconsolata 14")
+(set-default-font "Inconsolata 12")
 
 ; Setting the text prompt color for minibuffer
 ; (set-face-foreground 'minibuffer-prompt "#0087ff")
