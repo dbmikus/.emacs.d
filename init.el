@@ -2,6 +2,10 @@
 ;; Sets up basic, general, and global settings, and the offshores loading
 ;; to other files
 
+(message "=============================================")
+(message "          Loading Emacs init.el file"         )
+(message "=============================================")
+
 ;; Common Lisp support
 (require 'cl)
 
