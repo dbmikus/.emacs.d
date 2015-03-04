@@ -14,3 +14,5 @@ Rename "elisp" to "lisp"
 Rename "others-elisp" to "site-lisp"
 
 Add an "etc" directory for configuration files.
+
+Create Emacs setup / install script to initialize parts of this directory
