@@ -22,7 +22,7 @@
 ;; set light theme
 ;; (color-theme-solarized-light)
 
-(set-default-font "Inconsolata 12")
+(set-default-font "Inconsolata 13")
 
 ; Setting the text prompt color for minibuffer
 ; (set-face-foreground 'minibuffer-prompt "#0087ff")
@@ -48,3 +48,10 @@
   (setq words-include-escape t)  ; \ loses word break status
   (setq indent-tabs-mode nil))   ; never ever indent with tabs
 (add-hook 'sml-mode-hook 'my-sml-mode-hook)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Web-Mode styling
+(setq web-mode-markup-indent-offset 2)
+(setq web-mode-css-indent-offset 2)
+(setq web-mode-code-indent-offset 2)
