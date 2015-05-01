@@ -1,1 +1,1 @@
-(defvar package-list (color-theme-solarized color-theme org scss-mode undo-tree web-mode))
+(defvar dbm-package-list '(color-theme-solarized color-theme org scss-mode undo-tree web-mode))

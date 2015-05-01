@@ -11,5 +11,8 @@ while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symli
 done
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
+EMACS_PACKAGES="$( "$DIR/print-installed-packages.el" 2> /dev/null | tail -n +2 )"
 
-"${DIR}/print-installed-packages.el" 2> /dev/null | tail -n +2 > "${DIR}/../etc/installed-packages.el"
+# TODO instead of overwriting the installed-packages.el file, we should see if
+# something is there, and if so add unique packages to the package list
+echo "(defvar dbm-package-list '$EMACS_PACKAGES)" > "${DIR}/../etc/installed-packages.el"

@@ -26,3 +26,18 @@
                            ("marmalade" . "http://marmalade-repo.org/packages/")
                            ("melpa" . "http://melpa.milkbox.net/packages/")))
   )
+
+;; fetch the list of packages available
+(defun install-package-list (package-list)
+  (dolist (package package-list)
+        (unless (package-installed-p package)
+          (package-install package))))
+
+(unless package-archive-contents
+  (package-refresh-contents))
+
+(let ( (dbm-package-file (concat init-pwd "etc/installed-packages.el")) )
+  (when (file-exists-p dbm-package-file)
+    (progn
+      (load-file dbm-package-file)
+      (install-package-list dbm-package-list))))

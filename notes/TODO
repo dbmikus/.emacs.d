@@ -11,6 +11,8 @@ Use lexical scoping wherever possible
 
 Rename "elisp" to "lisp"
 
+Untrack files in "others-elisp"
+
 Rename "others-elisp" to "site-lisp"
 
 Add an "etc" directory for configuration files.
