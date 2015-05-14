@@ -27,8 +27,8 @@
                            ("melpa" . "http://melpa.milkbox.net/packages/")))
   )
 
-;; fetch the list of packages available
 (defun install-package-list (package-list)
+  "Fetch a list of packages to install and install all ones that are not currently installed for this Emacs system."
   (dolist (package package-list)
         (unless (package-installed-p package)
           (package-install package))))
@@ -36,8 +36,7 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
-(let ( (dbm-package-file (concat init-pwd "etc/installed-packages.el")) )
-  (when (file-exists-p dbm-package-file)
-    (progn
-      (load-file dbm-package-file)
-      (install-package-list dbm-package-list))))
+(load-file (concat init-pwd "elisp/utils.el"))
+
+(let ((dbm-package-file (concat init-pwd "etc/installed-packages.el")))
+  (install-package-list (eval-file dbm-package-file)))

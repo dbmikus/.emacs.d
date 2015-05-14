@@ -2,6 +2,7 @@
 
 (defvar cur-dir (file-name-directory load-file-name))
 (load-file (concat cur-dir "../init.el"))
+(load-file (concat cur-dir "../elisp/utils.el"))
 
 (defvar dbm-package-file (concat cur-dir "../etc/installed-packages.el"))
 
@@ -22,11 +23,8 @@
 (defun load-join-packages (package-list-file)
   "If the package list exists, load it in. Regardless, add unique packages to the list of installed packages and return the list of packages."
   (if (file-exists-p package-list-file)
-      (let ((package-list (progn
-                            (find-file package-list-file)
-                            (end-of-buffer)
-                            (eval-last-sexp nil))))
-        (concat-uniquely package-activated-list package-list))
+      (concat-uniquely package-activated-list
+                       (eval-file package-list-file))
     package-activated-list))
 
 (defun update-package-list-file ( package-list-file)
