@@ -11,6 +11,8 @@
 # installed contents.
 elpa/*
 
+eshell/*
+
 
 # specific files
 ac-comphist.dat
