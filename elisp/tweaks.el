@@ -63,3 +63,6 @@
 
 ;; Enabling zen coding
 (add-hook 'sgml-mode-hook 'zencoding-mode) ;; Auto-start on any markup modes
+
+;; Setting up auto mode stuff
+(add-to-list 'auto-mode-alist '("\\.inc\\'" . web-mode))
