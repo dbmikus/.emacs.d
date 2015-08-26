@@ -23,6 +23,8 @@
 ;; (color-theme-solarized-light)
 
 (set-default-font "Inconsolata 13")
+(add-to-list 'default-frame-alist
+             '(font . "Inconsolata 13"))
 
 ; Setting the text prompt color for minibuffer
 ; (set-face-foreground 'minibuffer-prompt "#0087ff")
